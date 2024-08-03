@@ -29,7 +29,7 @@ const Header = ({ selectedMonth, setSelectedMonth }) => {
                             <div className="relative z-10">
                                 <button
                                     onClick={toggleDropdown}
-                                    className='text-white text-xl font-fira font-bold shadow-md dark:shadow-black shadow-white dark:text-black bg-gray-700 dark:bg-gray-300 px-4 py-2 rounded-lg'
+                                    className='text-white text-xl font-fira font-bold shadow-md dark:shadow-black shadow-white dark:text-black bg-gray-700 dark:bg-gray-300 duration-300 ease-linear hover:shadow-blue-500 dark:hover:shadow-blue-500 px-4 py-2 rounded-lg'
                                 >
                                     {selectedMonth}
                                 </button>

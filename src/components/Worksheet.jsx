@@ -22,7 +22,7 @@ const Worksheet = ({ selectedMonth }) => {
                 <div className="flex flex-row -mx-3 mt-4 flex-wrap pt-10 w-full justify-center">
                     {data.map((item, index) => (
                         <div key={index} className="xl:w-3/12 lg:w-4/12 sm:w-6/12 w-full max-w-[450px] sm:max-w-100% px-3 mt-6">
-                            <div className="rounded-md p-2 h-full border-2 dark:border-white border-gray-900 bg-gray-900 dark:bg-white">
+                            <div className="rounded-md p-2 h-full border-2 dark:border-white border-gray-900 bg-gray-900 dark:bg-white duration-300 ease-linear hover:shadow-[7px_7px_2px] hover:shadow-[gray]">
                                 <a href={item.link} rel="noreferrer" target='_blank' className='rounded-md border-white dark:border-gray-900 border-[1px] overflow-hidden group w-full flex'>
                                     <img src={item.image} alt={item.name} className='w-full group-hover:scale-105 duration-300 ease-linear' />
                                 </a>
@@ -31,11 +31,9 @@ const Worksheet = ({ selectedMonth }) => {
                                         <span className='font-metal text-2xl md:text-3xl'>{`${index + 1}`}. </span>
                                         <p>{item.name}</p>
                                     </div>
-                                    <div className="flex items-center gap-4">
-                                        <a href={item.getHub_link} rel="noreferrer" target='_blank'>
-                                            <Icon IconName="Git_hub" IconClass="md:w-10 md:h-10 w-7 h-7 flex fill-white dark:fill-black" />
-                                        </a>
-                                    </div>
+                                    <a href={item.getHub_link} rel="noreferrer" target='_blank' className='duration-300 ease-linear hover:shadow-[4px_4px_2px] hover:shadow-[gray]  rounded-full'>
+                                        <Icon IconName="Git_hub" IconClass="md:w-10 md:h-10 w-7 h-7 flex fill-white dark:fill-black" />
+                                    </a>
                                 </div>
                             </div>
                         </div>

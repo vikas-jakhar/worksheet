@@ -19,7 +19,7 @@ const DarkModeToggle = () => {
     return (
         <button
             onClick={() => setDarkMode(prevMode => !prevMode)}
-            className="p-2 rounded-full flex items-center justify-center shadow-md dark:shadow-black shadow-white bg-white"
+            className="p-2 rounded-full flex items-center hover:shadow-blue-500 dark:hover:shadow-blue-500 duration-300 ease-linear justify-center shadow-md dark:shadow-black shadow-white bg-white"
         >
             {darkMode ? (
                 <Icon IconName="Light_Mode" IconClass="w-6 h-6 text-yellow-500" />
