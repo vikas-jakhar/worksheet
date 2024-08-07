@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import DarkModeToggle from './DarkModeToggle';
 import { MONTHS } from '../common/Helper';
-import profile from "../assets/image/webp/profile.jpg";
+import profile from "../assets/image/webp/profile.webp";
 
 const Header = ({ selectedMonth, setSelectedMonth }) => {
     const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -19,7 +19,7 @@ const Header = ({ selectedMonth, setSelectedMonth }) => {
         <div className='pt-5 pb-16 sm:pb-5'>
             <div className="container">
                 <nav className='flex items-center justify-between bg-gray-900 dark:bg-white rounded-full p-4'>
-                    <div className="flex items-center gap-3 sm:gap-4">
+                    <div className="flex items-center gap-3 sm:gap-4 cursor-pointer">
                         <img src={profile} alt="profile" className='sm:w-10 w-9 h-9 sm:h-10 rounded-full' />
                         <h2 className='font-merienda font-bold text-lg sm:text-xl dark:text-black text-white'>
                             Vikas Jakhar -[513]
